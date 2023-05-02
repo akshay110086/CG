@@ -4,11 +4,11 @@
 #include<conio.h>
 #include<graphics.h>
 #include<math.h>
-//#include<iostream.h>
+#include<iostream.h>
 
 //FUNCTION TO DRAW A LINE USING DDA ALGORITHM
-//float x0,y0;
-//float x1,y1;
+float x0,y0;
+float x1,y1;
 void input()
 {
 
@@ -81,7 +81,7 @@ void main()
 	int gd=DETECT, gm;             
 	clrscr();
 	input();
-	initgraph(&gd,&gm,"c:\\tc\\bgi");  //graphics driver,mode,path to driver
+	initgraph(&gd,&gm,"c:\\turboc3\\bgi");  //graphics driver,mode,path to driver
 	dda_line();
 	getch();
 	closegraph();
